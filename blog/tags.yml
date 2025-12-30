@@ -1,19 +1,29 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+anuncio:
+  label: Anuncios
+  permalink: /anuncios
+  description: Noticias y actualizaciones sobre el proyecto Dev Guides.
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+general:
+  label: General
+  permalink: /general
+  description: Temas de interés general para desarrolladores.
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+bun:
+  label: Bun
+  permalink: /bun
+  description: Artículos relacionados con el runtime Bun.
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+opinion:
+  label: Opinión
+  permalink: /opinion
+  description: Artículos de opinión y visión técnica del equipo.
+
+docker:
+  label: Docker
+  permalink: /docker
+  description: Guías y trucos sobre contenedorización con Docker.
+
+best-practices:
+  label: Mejores Prácticas
+  permalink: /best-practices
+  description: Consejos para mejorar la calidad y seguridad del código.

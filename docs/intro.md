@@ -1,47 +1,49 @@
 ---
 sidebar_position: 1
+title: Introducción
+slug: /intro
 ---
 
-# Tutorial Intro
+# Introducción a Dev Guides
 
-Let's discover **Docusaurus in less than 5 minutes**.
+¡Bienvenido al portal de documentación técnica de **Mural Táctil**!
 
-## Getting Started
+Este repositorio (`dev-guides`) nace con la misión de centralizar el conocimiento técnico del equipo, estandarizar nuestros procesos de desarrollo y facilitar la incorporación de nuevos miembros.
 
-Get started by **creating a new site**.
+## 🎯 Objetivo del Proyecto
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+En un entorno de desarrollo ágil, la información tiende a dispersarse entre chats, correos y wikis obsoletas. **Dev Guides** resuelve esto actuando como la **única fuente de verdad** para:
 
-### What you'll need
+*   **Estándares de Código:** Cómo escribimos y estructuramos nuestro software.
+*   **Guías de Herramientas:** Cómo configurar y usar Docker, Bun, Git, etc.
+*   **Arquitectura:** Decisiones de diseño y diagramas del sistema.
+*   **Solución de Problemas:** Respuestas a preguntas frecuentes y errores comunes.
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## 📚 Estructura de la Documentación
 
-## Generate a new site
+La documentación está organizada en las siguientes secciones principales:
 
-Generate a new Docusaurus site using the **classic template**.
+### [🦕 Docusaurus](./docusaurus/setup)
+Aprende sobre la herramienta que impulsa este mismo sitio. Aquí encontrarás guías sobre cómo editar contenido, crear nuevas páginas y desplegar cambios.
 
-The classic template will automatically be added to your project after you run the command:
+### [🐳 Docker](./docker/intro)
+Nuestra guía definitiva para la contenedorización. Desde los conceptos básicos hasta recetas complejas con `docker-compose` para entornos de desarrollo y producción.
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+### [🍔 Bun](./bun/intro)
+Explora por qué hemos adoptado Bun como nuestro runtime principal. Descubre cómo aprovechar su velocidad para tests, scripts y servidores.
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+## 🚀 ¿Cómo empezar?
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+Si es tu primer día en el equipo, te recomendamos seguir este orden:
 
-## Start your site
+1.  Lee esta introducción (¡ya estás aquí!).
+2.  Configura tu entorno local siguiendo la guía de [Bun](./bun/intro) y [Docker](./docker/intro).
+3.  Revisa los [estándares de contribución](./guia-creacion-contenido) si planeas editar esta documentación.
 
-Run the development server:
+## 🤝 Contribuyendo
 
-```bash
-cd my-website
-npm run start
-```
+Este proyecto es **de todos y para todos**. Si encuentras un error, una guía desactualizada o tienes un truco nuevo que compartir:
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+> **¡No pidas permiso, abre un Pull Request!**
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Revisa la [Guía de Creación de Contenido](./guia-creacion-contenido) para ver los estándares de formato y estilo.

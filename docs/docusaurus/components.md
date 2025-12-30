@@ -1,76 +1,128 @@
 ---
 sidebar_position: 3
-title: Components & Syntax
+title: Componentes y Sintaxis
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Interactive Components
+# Componentes Interactivos y Sintaxis Avanzada
 
-Docusaurus supports MDX, which allows you to use React components inside Markdown.
+Docusaurus soporta **MDX**, lo que significa que puedes utilizar componentes de React directamente dentro de tus archivos Markdown. Esto permite crear documentación mucho más interactiva y dinámica.
 
-## 1. Admonitions (Callouts)
+## 1. Admonitions (Avisos/Llamadas)
 
-### Syntax:
+Las "admonitions" son bloques especiales para resaltar información importante, advertencias o consejos.
+
+### Sintaxis
+
+Utiliza `:::` seguido del tipo de aviso.
 
 ```markdown
-:::info Info
-Use this for general information.
+:::info Información
+Usa esto para información general o contexto adicional.
 :::
 
-:::tip Tip
-Use this for helpful advice or shortcuts.
+:::tip Consejo
+Usa esto para consejos útiles, trucos o atajos.
 :::
 
-:::warning Warning
-Use this for things users should be careful about.
+:::warning Advertencia
+Usa esto para cosas con las que el usuario debe tener cuidado.
 :::
 
-:::danger Danger
-Use this for critical warnings or potential data loss.
+:::danger Peligro
+Usa esto para advertencias críticas o posible pérdida de datos.
 :::
 ```
-### Examples: 
 
-:::info Info
-Use this for general information.
+### Resultado Visual
+
+:::info Información
+Usa esto para información general o contexto adicional.
 :::
 
-:::tip Tip
-Use this for helpful advice or shortcuts.
+:::tip Consejo
+Usa esto para consejos útiles, trucos o atajos.
 :::
 
-:::warning Warning
-Use this for things users should be careful about.
+:::warning Advertencia
+Usa esto para cosas con las que el usuario debe tener cuidado.
 :::
 
-:::danger Danger
-Use this for critical warnings or potential data loss.
+:::danger Peligro
+Usa esto para advertencias críticas o posible pérdida de datos.
 :::
 
-## 2. Multi-Language Tabs
-Use tabs to show different code snippets for the same concept.
+## 2. Pestañas (Tabs)
 
-### Syntax:
+Las pestañas son excelentes para mostrar alternativas, como código en diferentes lenguajes o instrucciones para diferentes sistemas operativos.
 
-### Example:
+### Importación Requerida
+
+Debes importar los componentes al inicio de tu archivo `.mdx`:
+
+```javascript
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+```
+
+### Sintaxis y Ejemplo
+
 <Tabs>
   <TabItem value="js" label="JavaScript">
     ```javascript
-    console.log("Hello");
+    console.log("Hola Mundo");
     ```
   </TabItem>
   <TabItem value="py" label="Python">
     ```python
-    print("Hello")
+    print("Hola Mundo")
+    ```
+  </TabItem>
+  <TabItem value="bash" label="Bash">
+    ```bash
+    echo "Hola Mundo"
     ```
   </TabItem>
 </Tabs>
 
-## 3. Code Blocks
-Standard Markdown triple backticks are used. You can add titles:
+## 3. Bloques de Código
 
-```javascript title="src/hello.js"
-console.log("Hello with a title!");
+Docusaurus utiliza [Prism](https://prismjs.com/) para el resaltado de sintaxis.
+
+### Títulos en Bloques de Código
+
+Puedes añadir un título al bloque de código añadiendo `title="ruta/archivo.js"` después del lenguaje.
+
+```javascript title="src/saludo.js"
+console.log("¡Hola con un título!");
+```
+
+### Resaltado de Líneas
+
+Puedes resaltar líneas específicas usando comentarios mágicos.
+
+```javascript
+function demo() {
+  console.log('Esta línea es normal');
+  // highlight-next-line
+  console.log('Esta línea estará resaltada');
+}
+```
+
+## 4. Detalles Desplegables
+
+Puedes usar el elemento estándar de HTML `<details>` y `<summary>` para crear secciones colapsables.
+
+<details>
+  <summary>Haz clic para ver más detalles</summary>
+  <p>Aquí hay contenido oculto que solo se muestra cuando el usuario lo solicita. Es útil para FAQs o registros largos.</p>
+</details>
+
+```html
+<details>
+  <summary>Haz clic para ver más detalles</summary>
+  <p>Aquí hay contenido oculto...</p>
+</details>
 ```

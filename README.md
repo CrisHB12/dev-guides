@@ -1,41 +1,81 @@
-# Website
+# Developer Guides
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Welcome to the **Developer Guides** repository! This project serves as a comprehensive collection of technical documentation, tutorials, and best practices for developers. It is updated regularly to help you navigate through various technologies and workflow standardizations.
 
-## Installation
+## 📚 About The Project
+
+This website is a static documentation site built using [Docusaurus](https://docusaurus.io/), a modern static website generator designed to make it easy to maintain and publish documentation.
+
+The goal of this repository is to provide:
+-   **Centralized Knowledge**: A single source of truth for developer guides.
+-   **Tutorials**: Step-by-step instructions for common tasks (e.g., Docker, Docusaurus).
+-   **Best Practices**: Standardized procedures and coding guidelines.
+
+## 🚀 Tech Stack
+
+-   **Framework**: [Docusaurus](https://docusaurus.io/)
+-   **Language**: TypeScript, MDX
+-   **Package Manager**: [Bun](https://bun.sh/)
+
+## 🛠 Prerequisites
+
+This project uses [Bun](https://bun.sh/) as the package manager and runtime. Please ensure you have it installed before proceeding.
+
+## 🏁 Getting Started
+
+Follow these steps to set up the project locally.
+
+### Installation
+
+Install the project dependencies:
 
 ```bash
-yarn
+bun install
 ```
 
-## Local Development
+### Local Development
+
+Start the local development server:
 
 ```bash
-yarn start
+bun start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-## Build
+## 📦 Build & Deployment
+
+### Build
+
+Generate the static content into the `build` directory:
 
 ```bash
-yarn build
+bun run build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+The content in the `build` directory can be served using any static content hosting service.
 
-## Deployment
+### Deployment
 
-Using SSH:
+**Using SSH:**
 
 ```bash
-USE_SSH=true yarn deploy
+USE_SSH=true bun run deploy
 ```
 
-Not using SSH:
+**Not using SSH:**
 
 ```bash
-GIT_USER=<Your GitHub username> yarn deploy
+GIT_USER=<Your GitHub username> bun run deploy
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+If you are using GitHub Pages for hosting, this command identifies the environment and pushes the build to the `gh-pages` branch.
+
+## 🤝 Contributing
+
+We welcome contributions! If you want to add a new guide or improve an existing one:
+
+1.  Navigate to the `docs` folder.
+2.  Create a new Markdown (`.md`) or MDX (`.mdx`) file.
+3.  Add your content.
+4.  Submit a Pull Request.
