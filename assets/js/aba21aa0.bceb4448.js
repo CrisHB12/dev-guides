@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmural_codex=globalThis.webpackChunkmural_codex||[]).push([[5742],{7093(u){u.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"default"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmural_codex=globalThis.webpackChunkmural_codex||[]).push([[1903],{1912(a){a.exports=JSON.parse('{"blogBasePath":"/mural-codex/blog","blogTitle":"Blog","authorsListPath":"/mural-codex/blog/authors"}')}}]);

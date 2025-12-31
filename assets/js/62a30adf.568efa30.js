@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmural_codex=globalThis.webpackChunkmural_codex||[]).push([[9816],{762(a){a.exports=JSON.parse('{"metadata":{"permalink":"/mural-codex/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":3,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

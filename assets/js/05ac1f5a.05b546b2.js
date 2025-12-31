@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkdev_guides=globalThis.webpackChunkdev_guides||[]).push([[1433],{321(e){e.exports=JSON.parse('{"authors":[{"name":"Equipo de Desarrollo","title":"Mantenedores de Dev Guides","url":"https://github.com/CrisHB12","page":{"permalink":"/dev-guides/blog/authors/devteam"},"imageURL":"https://github.com/CrisHB12.png","key":"devteam","count":3}]}')}}]);
